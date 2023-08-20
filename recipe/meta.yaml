@@ -1,5 +1,5 @@
 {% set name = "asv_runner" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/asv_runner-{{ version }}.tar.gz
-  sha256: 4ee33f634ec1056a8d963d9ef2ab1df999920fd65e5825b64f30a06778cede21
+  sha256: 3998c7b7a7457a106e8e0328e64d6891aa1b324ecc3608c1373318e0be888e0b
 
 build:
   noarch: python
