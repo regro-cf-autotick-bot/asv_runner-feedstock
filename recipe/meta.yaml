@@ -1,5 +1,5 @@
 {% set name = "asv_runner" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/asv_runner-{{ version }}.tar.gz
-  sha256: 686c2e902a27491649b9ebd8e1f49659c37c92116f312974fdbb6fff1efa7122
+  sha256: 945dd301a06fa9102f221b1e9ddd048f5ecd863796d4c8cd487f5577fe0db66d
 
 build:
   noarch: python
@@ -16,11 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.7
     - pdm-backend
     - pip
   run:
-    - python >=3.8
+    - python >=3.7
+    - importlib-metadata
 
 test:
   imports:
